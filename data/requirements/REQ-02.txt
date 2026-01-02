@@ -1,0 +1,10 @@
+A general application element always has an IP address (e.g., 192.168.1.15) and a port in the range of 0 to 65535. In addition to this general application element, there are also two concrete elements: the server and the client. Both fundamentally have the same properties as the general application element and can directly access the corresponding elements. For a server, the maximum number of connections can additionally be specified. For a client, the specification of a timeout is possible (time specification for determining the waiting time for a response from a server, e.g., 3.5 seconds). These specifications are necessary for communication between clients and servers, where none, one, or multiple clients can communicate with none, one, or multiple servers. Each application element can return all its data (both the general and the additional data) as a string.
+
+Among users, we distinguish between normal users and administrators. A general user always has a name, while for a regular user it can additionally be specified whether they are currently active or not. Exactly one regular user always uses exactly one client. An administrator is additionally able to create new users. Whether creating a new user was successful is returned via a corresponding boolean value (true = creation successful, false = creation failed). Exactly one administrator typically maintains at least one application element; but there can also be multiple.
+
+Each user naturally has exactly one user credential, which is part of exactly this user. Such a user credential consists of an ID and a password, which can each contain any characters.
+
+The following elements do not need to be modeled:
+- The client-server application itself (no separate class)
+- Constructors for the possible classes
+- No additional methods or attributes not explicitly mentioned in the description

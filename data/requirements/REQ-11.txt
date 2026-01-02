@@ -1,0 +1,3 @@
+A hotel manages rooms and reservations. Each room has a room number and a room type. Rooms can be standard rooms or suites. Suites additionally have a number indicating how many bedrooms they contain.
+
+Guests can make reservations. A guest has a name and an email address. Each reservation is associated with exactly one guest and exactly one room. A reservation records the check-in date and check-out date. A guest may have multiple reservations, and a room may be subject to multiple reservations over time.

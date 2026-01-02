@@ -1,0 +1,33 @@
+@startuml
+class Person {
+  surname : String
+  firstName : String
+}
+
+class Student {
+  matriculationNumber : int
+}
+
+class Employee {
+  salary : double
+}
+
+class Professor {
+}
+
+class ResearchAssistant {
+}
+
+class WorkingGroup {
+  name : String
+  departmentNumber : int
+  calculateCosts()
+}
+
+Student --|> Person
+Employee --|> Person
+Professor --|> Employee
+ResearchAssistant --|> Employee
+Professor "1" --> "1..*" ResearchAssistant : supervises
+WorkingGroup "1" o-- "1..*" Employee : consistsOf
+@enduml

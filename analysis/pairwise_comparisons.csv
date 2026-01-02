@@ -1,0 +1,16 @@
+metric,comparison,U_statistic,p_value,significant,mean_diff
+f1_score,zero-shot vs one-shot,9901.5,4.732829413800166e-29,True,-0.162
+f1_score,zero-shot vs chain-of-thought,25091.0,0.8727006241574098,False,0.002
+f1_score,one-shot vs chain-of-thought,40003.5,1.5369558092110645e-26,True,0.164
+precision,zero-shot vs one-shot,19014.5,4.083275538725824e-06,True,-0.057
+precision,zero-shot vs chain-of-thought,26795.5,0.2811558253461536,False,0.025
+precision,one-shot vs chain-of-thought,32852.0,3.733778666225217e-08,True,0.083
+recall,zero-shot vs one-shot,8955.5,1.4713047083814206e-32,True,-0.211
+recall,zero-shot vs chain-of-thought,25342.5,0.9829278336726648,False,-0.002
+recall,one-shot vs chain-of-thought,41201.5,7.976485318881331e-31,True,0.209
+correctness_score,zero-shot vs one-shot,21949.5,0.014406799114079825,True,-0.212
+correctness_score,zero-shot vs chain-of-thought,20969.5,0.0015788691038700344,True,-0.252
+correctness_score,one-shot vs chain-of-thought,24433.5,0.522679010744607,False,-0.04
+hallucination_score,zero-shot vs one-shot,18284.0,2.3664500683169262e-08,True,-0.397
+hallucination_score,zero-shot vs chain-of-thought,23182.5,0.10530976725703256,False,-0.183
+hallucination_score,one-shot vs chain-of-thought,31097.0,3.93960186451007e-06,True,0.214

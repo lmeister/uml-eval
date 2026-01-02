@@ -1,0 +1,47 @@
+@startuml
+class Restaurant {
+}
+
+class MenuItem {
+  name : String
+  description : String
+  price : double
+}
+
+class Appetizer {
+}
+
+class MainCourse {
+  isVegetarian : boolean
+}
+
+class Dessert {
+}
+
+class Customer {
+  name : String
+  tableNumber : int
+}
+
+class Order {
+}
+
+class OrderLine {
+  quantity : int
+}
+
+class Waiter {
+  name : String
+  employeeId : int
+}
+
+Restaurant "1" *-- "0..*" MenuItem : offers
+Restaurant "1" *-- "0..*" Waiter : employs
+Appetizer --|> MenuItem
+MainCourse --|> MenuItem
+Dessert --|> MenuItem
+Customer "1" --> "1..*" Order : places
+Order "1" *-- "1..*" OrderLine : contains
+OrderLine "0..*" --> "1" MenuItem : for
+Waiter "1" --> "0..*" Order : handles
+@enduml

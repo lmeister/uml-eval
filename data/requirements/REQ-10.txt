@@ -1,0 +1,1 @@
+A pet shop sells animals. Each animal has a name, a species, and a price. Animals are categorized as either dogs or cats. Dogs have an additional attribute indicating their breed. Cats have an additional attribute indicating whether they are indoor cats.

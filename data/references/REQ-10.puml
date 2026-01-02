@@ -1,0 +1,22 @@
+@startuml
+class PetShop {
+}
+
+class Animal {
+  name : String
+  species : String
+  price : double
+}
+
+class Dog {
+  breed : String
+}
+
+class Cat {
+  isIndoor : boolean
+}
+
+PetShop "1" *-- "0..*" Animal : sells
+Dog --|> Animal
+Cat --|> Animal
+@enduml

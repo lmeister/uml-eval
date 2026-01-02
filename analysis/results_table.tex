@@ -1,0 +1,31 @@
+\begin{table}
+\caption{Evaluation Results by Model and Prompting Strategy}
+\label{tab:results}
+\begin{tabular}{llccc}
+\toprule
+ &  & f1_score & correctness_score & hallucination_score \\
+model & strategy &  &  &  \\
+\midrule
+\multirow[t]{3}{*}{deepseek/deepseek-v3.2} & chain-of-thought & 0.814000 & 4.111000 & 4.764000 \\
+ & one-shot & 0.908000 & 4.107000 & 4.876000 \\
+ & zero-shot & 0.729000 & 3.582000 & 4.071000 \\
+\cline{1-5}
+\multirow[t]{3}{*}{google/gemini-2.5-flash} & chain-of-thought & 0.762000 & 4.093000 & 4.831000 \\
+ & one-shot & 0.874000 & 3.760000 & 4.858000 \\
+ & zero-shot & 0.802000 & 3.938000 & 4.556000 \\
+\cline{1-5}
+\multirow[t]{3}{*}{mistralai/devstral-2512:free} & chain-of-thought & 0.804000 & 4.058000 & 4.596000 \\
+ & one-shot & 0.898000 & 3.920000 & 4.853000 \\
+ & zero-shot & 0.799000 & 3.733000 & 4.671000 \\
+\cline{1-5}
+\multirow[t]{3}{*}{openai/gpt-4o-mini} & chain-of-thought & 0.569000 & 3.400000 & 4.071000 \\
+ & one-shot & 0.849000 & 3.480000 & 4.276000 \\
+ & zero-shot & 0.524000 & 3.738000 & 4.547000 \\
+\cline{1-5}
+\multirow[t]{3}{*}{z-ai/glm-4-32b} & chain-of-thought & 0.578000 & 3.444000 & 4.267000 \\
+ & one-shot & 0.819000 & 3.640000 & 4.738000 \\
+ & zero-shot & 0.682000 & 2.858000 & 3.769000 \\
+\cline{1-5}
+\bottomrule
+\end{tabular}
+\end{table}

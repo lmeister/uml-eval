@@ -1,0 +1,36 @@
+@startuml
+class RentalCompany {
+}
+
+class Vehicle {
+  licensePlate : String
+  brand : String
+  dailyRate : double
+}
+
+class Car {
+  numberOfSeats : int
+}
+
+class Motorcycle {
+  engineDisplacement : int
+}
+
+class Customer {
+  name : String
+  phoneNumber : String
+  driverLicenseNumber : String
+}
+
+class RentalContract {
+  startDate : String
+  endDate : String
+  totalPrice : double
+}
+
+RentalCompany "1" *-- "0..*" Vehicle : manages
+Car --|> Vehicle
+Motorcycle --|> Vehicle
+RentalContract "0..*" --> "1" Customer : with
+RentalContract "0..*" --> "1" Vehicle : for
+@enduml

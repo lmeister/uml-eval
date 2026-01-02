@@ -1,0 +1,31 @@
+@startuml
+class User {
+  id : int
+  firstName : String
+  lastName : String
+}
+
+class Calendar {
+  id : int
+}
+
+class CalendarElement {
+  subject : String
+  startDate : String
+  endDate : String
+}
+
+class Appointment {
+  location : String
+}
+
+class Task {
+  description : String
+}
+
+User "1" --> "1..*" Calendar : owns
+Calendar "1" *-- "0..*" CalendarElement : contains
+Appointment --|> CalendarElement
+Task --|> CalendarElement
+Task "0..1" o-- "0..*" Task : subtasks
+@enduml

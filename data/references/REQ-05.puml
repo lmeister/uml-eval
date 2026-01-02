@@ -1,0 +1,42 @@
+@startuml
+class Consumer {
+}
+
+class PrivateCustomer {
+}
+
+class BusinessCustomer {
+  discount : float
+  electricityPrice : float
+}
+
+class ElectricityMeter {
+  id : int
+  getConsumption()
+}
+
+class RotaryMeter {
+}
+
+class SmartMeter {
+  ip : String
+  port : int
+  getPrice()
+}
+
+class Extension {
+  adjustPrice()
+}
+
+class PriceExtension {
+}
+
+PrivateCustomer --|> Consumer
+BusinessCustomer --|> Consumer
+RotaryMeter --|> ElectricityMeter
+SmartMeter --|> ElectricityMeter
+PriceExtension --|> Extension
+Consumer "1" --> "0..1" ElectricityMeter : has
+SmartMeter "1" *-- "0..*" Extension : contains
+PriceExtension "1" --> "1" BusinessCustomer : refersTo
+@enduml

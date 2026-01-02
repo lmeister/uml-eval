@@ -1,0 +1,4 @@
+strategy,f1_score_mean,f1_score_std,f1_score_count,precision_mean,precision_std,precision_count,recall_mean,recall_std,recall_count,completeness_score_mean,completeness_score_std,completeness_score_count,correctness_score_mean,correctness_score_std,correctness_score_count,hallucination_score_mean,hallucination_score_std,hallucination_score_count
+chain-of-thought,0.705,0.17,225,0.804,0.168,225,0.646,0.191,225,4.516,0.614,225,3.821,0.852,225,4.506,0.717,225
+one-shot,0.869,0.121,225,0.887,0.115,225,0.855,0.133,225,4.49,0.593,225,3.781,0.848,225,4.72,0.595,225
+zero-shot,0.707,0.152,225,0.83,0.146,225,0.644,0.184,225,4.56,0.596,225,3.57,0.891,225,4.323,0.85,225

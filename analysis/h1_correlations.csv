@@ -1,0 +1,4 @@
+hypothesis,metric_reference,metric_judge,label,spearman_rho,p_value,significance,interpretation,n_samples
+H1,precision,hallucination_score,Precision vs Hallucination,0.4920830399150467,1.8807577099176012e-42,***,Moderate Validation,675
+H1,recall,completeness_score,Recall vs Completeness,0.21689708504014807,1.2511237059505729e-08,***,Weak (Complementary),675
+H1,f1_score,correctness_score,F1 vs Correctness,0.30281562208071044,8.811219408477639e-16,***,Moderate Validation,675

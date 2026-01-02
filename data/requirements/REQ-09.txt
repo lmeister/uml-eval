@@ -1,0 +1,1 @@
+A library contains books. Each book has a title, an author, and an ISBN number. Books can be borrowed by members. A member has a name and a membership number. A member can borrow multiple books at a time, but each book can only be borrowed by one member at a time. Some books may not be currently borrowed by anyone.

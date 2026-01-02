@@ -1,0 +1,10 @@
+A general file system element always has a size specification (e.g., 15.5 kilobytes) and a name. Additionally, for each file system element, the location where the element can be found is stored. This location is always specified as the complete path to this element, e.g., "C:\Folder\Subfolder\file.extension". Furthermore, each file system element always stores the point in time when it was created, using a so-called timestamp. Conversely, a timestamp is always assigned to exactly one file system element.
+
+A timestamp indicates a specific point in time. For this purpose, the current date (day, month, and year each separately) and the current time (hour, minute, and second each separately) are stored. This timestamp can be returned completely as a string.
+
+In addition to the general file system element, there are also two concrete elements: the file and the folder. Both fundamentally have the same properties as the general file system element. A file additionally has a specific file extension (e.g., "txt" or "java") and stores another timestamp that indicates the time of the last modification. A folder additionally has a collection of elements that are stored within this folder. These elements can be any other file system elements, which are then part of this folder. However, a folder can also be empty, meaning it contains no other file system element. Conversely, each file system element is always part of exactly one folder.
+
+The following elements do not need to be modeled:
+- The file system itself
+- Constructors for the possible classes
+- No additional methods or attributes not explicitly mentioned in the description

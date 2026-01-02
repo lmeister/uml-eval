@@ -1,0 +1,18 @@
+@startuml
+class Library {
+}
+
+class Book {
+  title : String
+  author : String
+  isbn : String
+}
+
+class Member {
+  name : String
+  membershipNumber : int
+}
+
+Library "1" *-- "0..*" Book : contains
+Member "0..1" --> "0..*" Book : borrows
+@enduml

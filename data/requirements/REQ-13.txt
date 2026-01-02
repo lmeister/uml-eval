@@ -1,0 +1,5 @@
+A restaurant has a menu consisting of menu items. Each menu item has a name, a description, and a price. Menu items are categorized as appetizers, main courses, or desserts. Main courses additionally indicate whether they are vegetarian.
+
+Customers place orders at the restaurant. Each customer has a name and a table number. An order contains one or more order lines. Each order line refers to exactly one menu item and specifies the quantity ordered. An order belongs to exactly one customer, and a customer may place multiple orders during their visit.
+
+The restaurant employs waiters. A waiter has a name and an employee ID. Each order is handled by exactly one waiter, but a waiter can handle multiple orders.

@@ -1,0 +1,32 @@
+@startuml
+class Hotel {
+}
+
+class Room {
+  roomNumber : int
+  roomType : String
+}
+
+class StandardRoom {
+}
+
+class Suite {
+  numberOfBedrooms : int
+}
+
+class Guest {
+  name : String
+  email : String
+}
+
+class Reservation {
+  checkInDate : String
+  checkOutDate : String
+}
+
+Hotel "1" *-- "0..*" Room : manages
+StandardRoom --|> Room
+Suite --|> Room
+Guest "1" --> "0..*" Reservation : makes
+Reservation "0..*" --> "1" Room : for
+@enduml

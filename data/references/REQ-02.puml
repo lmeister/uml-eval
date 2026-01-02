@@ -1,0 +1,41 @@
+@startuml
+class ApplicationElement {
+  ip : String
+  port : int
+  getData()
+}
+
+class Server {
+  maxConnections : int
+}
+
+class Client {
+  timeout : double
+}
+
+class User {
+  name : String
+}
+
+class RegularUser {
+  isActive : boolean
+}
+
+class Administrator {
+  createUser()
+}
+
+class UserCredential {
+  id : String
+  password : String
+}
+
+Server --|> ApplicationElement
+Client --|> ApplicationElement
+RegularUser --|> User
+Administrator --|> User
+Server "0..*" --> "0..*" Client : communicates
+RegularUser "1" --> "1" Client : uses
+Administrator "1" --> "1..*" ApplicationElement : maintains
+User "1" *-- "1" UserCredential
+@enduml

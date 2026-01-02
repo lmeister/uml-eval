@@ -1,0 +1,5 @@
+Persons are always identified by their surname and first name. For students, the matriculation number is additionally stored. Since the system to be developed should only represent the situation in teaching with university employees, employees are divided exclusively into research assistants and professors. There must therefore be no employees who are neither professors nor research assistants. The monthly salary is stored for each employee.
+
+Professors are supervisors of research assistants. A research assistant has exactly one supervisor.
+
+Employees can be part of a working group, which in turn is identified by its name and the number of the department in which it is integrated. The total personnel costs for the working group can be calculated on request via the working group.

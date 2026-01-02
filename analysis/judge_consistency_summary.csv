@@ -1,0 +1,4 @@
+dimension,mean_std,median_std,max_std,pct_below_1.0,pct_below_0.5,n_samples
+completeness,0.329,0.447,1.14,96.3,65.0,675
+correctness,0.644,0.548,1.789,79.4,38.5,675
+hallucination,0.308,0.0,1.643,93.0,72.7,675

@@ -1,0 +1,30 @@
+@startuml
+class FileSystemElement {
+  size : double
+  name : String
+  location : String
+}
+
+class Timestamp {
+  day : int
+  month : int
+  year : int
+  hour : int
+  minute : int
+  second : int
+  getTimestamp()
+}
+
+class File {
+  fileExtension : String
+}
+
+class Folder {
+}
+
+FileSystemElement "1" *-- "1" Timestamp : creationDate
+File "1*" --> "1" Timestamp : modificationDate
+File --|> FileSystemElement
+Folder --|> FileSystemElement
+Folder "1" *-- "0..*" FileSystemElement : contains
+@enduml

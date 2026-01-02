@@ -1,0 +1,3 @@
+A rental company manages a fleet of vehicles. Each vehicle has a license plate, a brand, and a daily rental rate. Vehicles are either cars or motorcycles. Cars have a number of seats. Motorcycles have an engine displacement measured in cubic centimeters.
+
+Customers can rent vehicles. A customer has a name, a phone number, and a driver license number. When a customer rents a vehicle, a rental contract is created. The rental contract specifies the start date, end date, and total price. Each rental contract involves exactly one customer and exactly one vehicle.

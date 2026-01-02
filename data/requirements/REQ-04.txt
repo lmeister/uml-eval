@@ -1,0 +1,5 @@
+A user owns at least one calendar. However, they can also own multiple calendars. However, a calendar is always assigned to exactly one user. The respective calendar "knows" its user. Both the calendar and the user are identified by IDs, which are stored as integers. The user additionally has a first name and a last name.
+
+The user can create multiple calendar elements in their calendar. More precisely, calendar elements are divided into two different categories: appointments and tasks. For both calendar elements, a subject (title of the calendar element), a start date, and an end date must always be defined. All three attributes are stored as simple text. An appointment additionally requires a location specification where the appointment takes place. A task can additionally be provided with a task description.
+
+A special feature is that tasks can also be structured into (sub-)tasks. This means that a task can contain none, one, or multiple other tasks. These (sub-)tasks are then assigned to exactly one other task.
